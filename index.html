@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karur Smart Bus | AI Bus Information System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🚌</span>
+            <div>
+                <strong>Karur Smart Bus</strong>
+                <small>Smart Travel • Smarter Journey</small>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="/" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#">Admin</a>
+        </div>
+
+        <button class="login-btn">Login</button>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="welcome-text">SMART TRANSPORT SOLUTION</span>
+
+            <h1>
+                Travel Smarter.<br>
+                <span>Reach Better.</span>
+            </h1>
+
+            <p>
+                Find buses, explore routes, check timings and get
+                AI-powered travel predictions for your journey.
+            </p>
+
+
+            <!-- SEARCH CARD -->
+            <div class="search-card">
+
+                <div class="search-title">
+                    <h2>Find Your Bus</h2>
+                    <p>Search buses between your preferred locations</p>
+                </div>
+
+
+                <div class="search-fields">
+
+                    <div class="field">
+                        <label>FROM</label>
+                        <select>
+                            <option>Select starting point</option>
+                            <option>Karur</option>
+                            <option>Vellakoil</option>
+                            <option>Aravakurichi</option>
+                            <option>Kulithalai</option>
+                        </select>
+                    </div>
+
+
+                    <div class="swap">
+                        ⇄
+                    </div>
+
+
+                    <div class="field">
+                        <label>TO</label>
+                        <select>
+                            <option>Select destination</option>
+                            <option>Karur</option>
+                            <option>Vellakoil</option>
+                            <option>Aravakurichi</option>
+                            <option>Kulithalai</option>
+                        </select>
+                    </div>
+
+
+                    <div class="field">
+                        <label>DATE</label>
+                        <input type="date">
+                    </div>
+
+
+                    <div class="field">
+                        <label>TIME</label>
+                        <input type="time">
+                    </div>
+
+
+                    <button class="search-btn">
+                        Search Bus
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK STATS -->
+    <section class="stats">
+
+        <div class="stat-box">
+            <div class="stat-icon">🚌</div>
+            <div>
+                <h3>Bus Information</h3>
+                <p>Routes & Timings</p>
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-icon">👥</div>
+            <div>
+                <h3>AI Predictions</h3>
+                <p>Passenger & Crowd</p>
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-icon">💺</div>
+            <div>
+                <h3>Seat Availability</h3>
+                <p>Estimated Seats</p>
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-icon">🗺️</div>
+            <div>
+                <h3>Smart Routes</h3>
+                <p>Route & Stop Details</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+
+        <div class="section-heading">
+
+            <span>SMART FEATURES</span>
+
+            <h2>Everything You Need<br>
+                for a Better Journey</h2>
+
+            <p>
+                One platform for bus information, route details and
+                intelligent travel predictions.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🔎</div>
+                <h3>Smart Bus Search</h3>
+                <p>
+                    Search buses using source, destination,
+                    date and time.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Passenger Prediction</h3>
+                <p>
+                    AI-based prediction of expected passenger count.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">💺</div>
+                <h3>Seat Availability</h3>
+                <p>
+                    Estimate available seats before starting your journey.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Crowd Prediction</h3>
+                <p>
+                    Understand whether the bus may have
+                    Low, Medium or High crowd.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Travel & Delay Prediction</h3>
+                <p>
+                    Get estimated travel duration and possible delay.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>Interactive Route</h3>
+                <p>
+                    Explore routes, stops and distance through
+                    an interactive map.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <span>ABOUT THE SYSTEM</span>
+
+            <h2>
+                A Smarter Way to<br>
+                Plan Your Bus Journey
+            </h2>
+
+            <p>
+                Karur Smart Bus is an intelligent web-based system
+                designed to provide bus information and AI-powered
+                travel predictions.
+            </p>
+
+            <p>
+                The system combines bus routes, timings, historical
+                passenger data and traffic information to help users
+                make informed travel decisions.
+            </p>
+
+            <button class="learn-btn">
+                Explore More →
+            </button>
+
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-card-icon">🤖</div>
+
+            <h3>AI Powered</h3>
+
+            <p>
+                Passenger, crowd, seat, travel-time and
+                delay predictions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+            <strong>🚌 Karur Smart Bus</strong>
+            <p>Smart Travel • Smarter Journey</p>
+        </div>
+
+        <p>© 2026 Karur Smart Bus. All rights reserved.</p>
+
+    </footer>
+
+</body>
+</html>
